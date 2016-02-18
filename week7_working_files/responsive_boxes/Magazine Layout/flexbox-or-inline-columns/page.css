@@ -1,0 +1,105 @@
+html, body {
+  font-family: sans-serif;
+}
+
+/*Default inline column styles*/
+/*https://davidwalsh.name/remove-whitespace-inline-block*/
+main {
+  width: 100%;
+  font-size: 0;
+}
+header {
+  display: flex;
+}
+
+header, .card {
+  display: flex;
+  flex: 0 200px;
+}
+
+header nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  border: 5px solid white;
+  overflow: hidden;
+}
+
+header nav a {
+  display: flex;
+  background: rgba(100,100,100,.5);
+  border: 5px solid white;
+  padding: 10px 30px;
+  margin-left: 28px;
+}
+
+section, .box{
+  display: flex;
+  justify-content: space-between;
+}
+
+section, .box-2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content, .sidebar {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.content {
+  width: 10%;
+}
+.sidebar {
+  width: 20%;
+}
+
+.card {
+  width:5%;
+}
+
+.nav {
+  width: 10%;
+}
+
+.box {
+  width: 20%;
+}
+
+.box-2 {
+  width: 40%;
+}
+
+.flexbox.flexwrap .nav {
+  display: flex;
+}
+
+/*Flexbox detection with Modernizr*/
+.flexbox.flexwrap main {
+  display: flex;
+}
+
+.flexbox.flexwrap .content {
+  display: flex;
+  flex: 1;
+}
+
+.flexbox.flexwrap .sidebar {
+  display: flex;
+  flex: 0 200px;
+}
+
+.placeholder {
+  background: rgba(100,100,100,.5);
+  border: 5px solid white;
+  padding: 20px;
+  min-height: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sidebar, .content{
+  min-height: 240px;
+}
